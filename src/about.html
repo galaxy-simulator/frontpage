@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Galaxy Simulator</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/small-business.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Galaxy Simulator</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">About
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Page Heading/Breadcrumbs -->
+      <h1 class="mt-4 mb-3">What is this all about?</h1>
+
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="breadcrumb-item active">About</li>
+      </ol>
+
+      <!-- Intro Content -->
+      <div class="row">
+        <div class="col-lg-6">
+          <img class="img-fluid rounded mb-4" src="images/example_boxes_750x450.png" alt="">
+        </div>
+        <div class="col-lg-6">
+          <h2>What is this all about?</h2>
+          <p>
+            The Goal of this complete project is to simulate galaxies. So the obvious two steps are: 1. Generating
+            point clouds and 2. simulating the pointclouds that we generated. </p>
+          <p>This all started when Tim Tugendhat invited me to Heidelberg to help visualize the NFW-function.
+            After we made som visualizations, we started generating our own clusters using the
+            <a href="https://en.wikipedia.org/wiki/Navarro%E2%80%93Frenk%E2%80%93White_profile">Navarro Frenk White
+            profile</a>. That was so much fun that I quickly started generating more and more stars and optimized
+            the complete process.
+          </p>
+          <p>
+            I then started to think about stuff to do with the millions of stars I generated and realized that
+            Simulating the clusters would be a very hard, but informative task to learn new skills.
+          </p>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <!-- Generating using the NFW profile -->
+      <div class="row">
+        <div class="col-lg-9">
+          <h2>Generating the pointclouds</h2>
+          <p>
+            In the aftermath, generating the pointclouds was one of the easier parts of the project.
+            A detailed summary on how the stars are generated can be found in the
+            <a href="http://writeup.emile.space">writeup</a>.
+          </p>
+          <p>
+            The process short version can be explained in the following way: Create a star, test if it should be kept
+            or not, keep it if yes and repeat the process if not. The Process is repeated few thousand times and in the
+            end, a clusted of objects apears on the screen.
+            The <a href="https://en.wikipedia.org/wiki/Navarro%E2%80%93Frenk%E2%80%93White_profile">Navarro Frenk White
+            profile</a> is used to determine what star is kept and what star is discarded.
+          </p>
+          <p>
+            Using this technique, a lot of stars can be generated, and because of all the computations running
+            independently, this whole process scales very well. After containerizing the software generating random
+            stars and sorting "bad ones" out, it can be thrown onto a cluster of computers who generate stars 24/7
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <img class="img-fluid rounded mb-4" src="images/pointcloud_400x600.png" alt="">
+        </div>
+      </div>
+      <!-- /.row -->
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue">
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">Est. 2018:
+        <a href="https://mdbootstrap.com/education/bootstrap/">emile.space</a>
+      </div>
+      <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>

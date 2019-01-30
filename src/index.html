@@ -95,7 +95,7 @@
               <p class="card-text">I wrote a writeup for people who want to implement this or just want to dive deeper into the rabbit hole. It contains the process of generating the star clusters and how the simulation efficiency can be increased alot.</p>
             </div>
             <div class="card-footer">
-              <a href="http://writeup.emile.space/" class="btn btn-primary">writeup</a>
+              <a href="http://writeup.emile.space/" class="btn btn-primary">Writeup</a>
             </div>
           </div>
         </div>
@@ -107,7 +107,7 @@
               <p class="card-text">The complete project is currently split up into multiple docker containers representing a micro-service each. It is currently stored in git and is always happy if new post-request are made!</p>
             </div>
             <div class="card-footer">
-              <a href="http://code.emile.space" class="btn btn-primary">code</a>
+              <a href="http://code.emile.space" class="btn btn-primary">Code</a>
             </div>
           </div>
         </div>
@@ -124,7 +124,8 @@
               <p class="card-text">The Generator container generates stars using NFW containers. This makes it incredibly fast, because it is not bound to a machine, but can operate on a giant cluster.</p>
             </div>
             <div class="card-footer">
-              <a href="http://generator.nbg1.emile.space" class="btn btn-primary">generator</a>
+              <a href="about.html#generating" class="btn btn-primary">More information</a>
+              <a href="http://generator.nbg1.emile.space" class="btn btn-primary">Generator module</a>
             </div>
           </div>
         </div>
@@ -136,8 +137,8 @@
               <p class="card-text">The current "Database" is a go array containing the galaxy stored in the form of a tree. This is not optimal, but it works and I'm working on a more scalable solution.</p>
             </div>
             <div class="card-footer">
-              <a href="http://db.nbg1.emile.space" class="btn btn-primary">db</a>
-              <a href="http://db.nbg1.emile.space/metrics" class="btn btn-primary">metrics</a>
+              <a href="http://db.nbg1.emile.space" class="btn btn-primary">Database</a>
+              <a href="http://db.nbg1.emile.space/metrics" class="btn btn-primary">Metrics</a>
             </div>
           </div>
         </div>
@@ -149,8 +150,8 @@
               <p class="card-text">The manager manages distributing stars to the simulator containers, it also collects the metrics from the Simulator containers and functions as a target for prometheus.</p>
             </div>
             <div class="card-footer">
-              <a href="http://manager.nbg1.emile.space" class="btn btn-primary">manager</a>
-              <a href="http://manager.nbg1.emile.space/metrics" class="btn btn-primary">metrics</a>
+              <a href="http://manager.nbg1.emile.space" class="btn btn-primary">Manager</a>
+              <a href="http://manager.nbg1.emile.space/metrics" class="btn btn-primary">Metrics</a>
             </div>
           </div>
         </div>
@@ -167,7 +168,7 @@
               <p class="card-text">The simulator container get's stars from the manager and calculates the forces acting on it. It then inserts the new star into the database.</p>
             </div>
             <div class="card-footer">
-              <a href="http://simulator.nbg1.emile.space" class="btn btn-primary">simulator</a>
+              <a href="http://simulator.nbg1.emile.space" class="btn btn-primary">Simulator</a>
             </div>
           </div>
         </div>
@@ -179,7 +180,7 @@
               <p class="card-text"><a href="https://traefik.io/">Traefik</a> ist used as a reverse proxy for some services such as the generator container. It also allows a lot of other services to work.</p>
             </div>
             <div class="card-footer">
-              <a href="http://traefik.nbg1.emile.space" class="btn btn-primary">traefik</a>
+              <a href="http://traefik.nbg1.emile.space" class="btn btn-primary">Traefik</a>
             </div>
           </div>
         </div>
@@ -191,9 +192,9 @@
               <p class="card-text">Monitoring is done by combining the power of <a href="https://prometheus.io">Prometheus</a> and <a href="https://grafana.com/">Grafana</a> using the other containers as targets to pull metrics from.</p>
             </div>
             <div class="card-footer">
-              <a href="http://manager.nbg1.emile.space" class="btn btn-primary">manager</a>
-              <a href="http://prometheus.nbg1.emile.space" class="btn btn-primary">prometheus</a>
-              <a href="http://grafana.nbg1.emile.space" class="btn btn-primary">grafana</a>
+              <a href="http://manager.nbg1.emile.space" class="btn btn-primary">Manager</a>
+              <a href="http://prometheus.nbg1.emile.space" class="btn btn-primary">Prometheus</a>
+              <a href="http://grafana.nbg1.emile.space" class="btn btn-primary">Grafana</a>
             </div>
           </div>
         </div>
@@ -203,6 +204,8 @@
 
       <!-- content row -->
       <div class="row">
+        <div class="col-md-4 mb-4">
+        </div>
         <div class="col-md-4 mb-4">
           <div class="card h-100">
             <div class="card-body">

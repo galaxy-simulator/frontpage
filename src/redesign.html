@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Galaxy Simulator</title>
+
+        <!-- Bootstrap core CSS
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        000 -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <!-- Custom styles for this template
+        <link href="css/small-business.css" rel="stylesheet">
+        -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/custom.css">
+
+    </head>
+
+    <body>
+
+    <div class="container">
+        <header class="blog-header py-3">
+            <div class="row flex-nowrap justify-content-between align-items-center">
+                <div class="col-4 text-center">
+                </div>
+
+                <div class="col-4 text-center">
+                    <a class="blog-header-logo text-dark" href="index.html">Galaxy Simulator</a>
+                </div>
+
+                <div class="col-4 text-center">
+                </div>
+
+            </div>
+        </header>
+
+        <div class="nav-scroller py-1 mb-2">
+            <nav class="nav d-flex justify-content-between">
+                <a class="p-2 text-muted" href="http://writeup.emile.space">Writeup</a>
+                <a class="p-2 text-muted" href="http://code.emile.space">Code</a>
+                <a class="p-2 text-muted" href="#">Generation</a>
+                <a class="p-2 text-muted" href="#">Database</a>
+                <a class="p-2 text-muted" href="#">Manager</a>
+                <a class="p-2 text-muted" href="#">Simulation</a>
+                <a class="p-2 text-muted" href="#">Load balancing</a>
+                <a class="p-2 text-muted" href="#">Monitoring</a>
+                <a class="p-2 text-muted" href="#">Visualization</a>
+                <a class="p-2 text-muted" href="#">Social Media</a>
+            </nav>
+        </div>
+
+        <div class="jumbotron jumbotron-head p-3 p-md-5 text-white rounded bg-dark">
+            <div class="col-md-6 px-0">
+                <h1 class="display-4 font-italic">Generating and simulating star clusters</h1>
+                <p class="lead my-3">Generating Point clouds using the Random Sampling function on the Navarro Frenk
+                    White profile for further simulation of the forces acting inbetween the stars.</p>
+                <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
+            </div>
+        </div>
+
+        <!-- Row 1 -->
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <strong class="d-inline-block mb-2 text-primary">Documentation</strong>
+                        <h3 class="mb-0">
+                            <a class="text-dark" href="#">Writeup</a>
+                        </h3>
+                        <div class="mb-1 text-muted">Feb 3 2019</div>
+                        <p class="card-text mb-auto">The complete project is documented so that everybody can access
+                        and use it a a reference for other projects.</p>
+                        <a href="http://writeup.emile.space">Read the writeup</a>
+                    </div>
+                    <img class="img-fluid rounded" src="images/writeup_sample_200x250.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <strong class="d-inline-block mb-2 text-primary">Tech</strong>
+                        <h3 class="mb-0">
+                            <a class="text-dark" href="#">Code</a>
+                        </h3>
+                        <div class="mb-1 text-muted">Feb 3 2019</div>
+                        <p class="card-text mb-auto">The simulator is completely writting in
+                            <a href="https://golang.org/">go</a> and can be found in the git.
+                        </p>
+                        <a href="http://code.emile.space">Read the code</a>
+                    </div>
+                    <img class="img-fluid rounded" src="images/code_sample_200x250.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <strong class="d-inline-block mb-2 text-primary">Tech</strong>
+                        <h3 class="mb-0">
+                            <a class="text-dark" href="#">Generator</a>
+                        </h3>
+                        <div class="mb-1 text-muted">Feb 3 2019</div>
+                        <p class="card-text mb-auto">
+                            The generator generates stars using the NFW profile.
+                        </p>
+                        <a href="http://code.emile.space/generator-container">Read the code</a>
+                    </div>
+                    <img class="img-fluid rounded" src="images/generator_sample_200x250.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <strong class="d-inline-block mb-2 text-primary">Storage</strong>
+                        <h3 class="mb-0">
+                            <a class="text-dark" href="#">Database</a>
+                        </h3>
+                        <div class="mb-1 text-muted">Feb 3 2019</div>
+                        <p class="card-text mb-auto">A <a href="https://www.postgresql.org/">PostgreSQL</a>
+                            database is used to store the stars.
+                        </p>
+                        <a href="http://code.emile.space/database-container">Read the code</a>
+                    </div>
+                    <img class="img-fluid rounded" src="images/database_sample_200x250.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <strong class="d-inline-block mb-2 text-primary">Tech</strong>
+                        <h3 class="mb-0">
+                            <a class="text-dark" href="#">Manager</a>
+                        </h3>
+                        <div class="mb-1 text-muted">Feb 3 2019</div>
+                        <p class="card-text mb-auto">
+                            The manager container distributes the stars that need to be processed by providing them
+                            to the simulation services.
+                        </p>
+                        <a href="http://code.emile.space/manager-container">Read the code</a>
+                    </div>
+                    <img class="img-fluid rounded" src="images/manager_sample_200x250.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <strong class="d-inline-block mb-2 text-primary">Tech</strong>
+                        <h3 class="mb-0">
+                            <a class="text-dark" href="#">Simulator</a>
+                        </h3>
+                        <div class="mb-1 text-muted">Feb 3 2019</div>
+                        <p class="card-text mb-auto">
+                            The simulator continer gets stars from the manager, calculates their new position
+                            and inserts them into the next timestep.
+                        </p>
+                        <a href="http://code.emile.space">Read the code</a>
+                    </div>
+                    <img class="img-fluid rounded" src="images/simulator_sample_200x250.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 4 -->
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <strong class="d-inline-block mb-2 text-primary">Load balancing</strong>
+                        <h3 class="mb-0">
+                            <a class="text-dark" href="#">Traefik</a>
+                        </h3>
+                        <div class="mb-1 text-muted">Feb 3 2019</div>
+                        <p class="card-text mb-auto">
+                            Routing traffic is done using <a href="https://traefik.io">Traefik</a>,
+                            "A reverse proxy / load balancer that's easy, dynamic, automatic, fast [...]"
+                        </p>
+                        <a href="http://code.emile.space/manager-container">Read the code</a>
+                    </div>
+                    <img class="img-fluid rounded" src="images/traefik_sample_200x250.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <strong class="d-inline-block mb-2 text-primary">Monitoring</strong>
+                        <h3 class="mb-0">
+                            <a class="text-dark" href="#">Grafana + Prometheus</a>
+                        </h3>
+                        <div class="mb-1 text-muted">Feb 3 2019</div>
+                        <p class="card-text mb-auto">
+                            The metrics are pushed to <a href="https://prometheus.io">prometheus</a> and displayed in a nice dashboard using <a
+                                    href="https://grafana.com">grafana</a>.
+                        </p>
+                        <a href="http://code.emile.space">Read the code</a>
+                    </div>
+                    <img class="img-fluid rounded" src="images/grafana_sample_200x250.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 5 -->
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <strong class="d-inline-block mb-2 text-primary">Visualizing</strong>
+                        <h3 class="mb-0">
+                            <a class="text-dark" href="#">Manager</a>
+                        </h3>
+                        <div class="mb-1 text-muted">Feb 3 2019</div>
+                        <p class="card-text mb-auto">
+                            The manager container distributes the stars that need to be processed by providing them
+                            to the simulation services.
+                        </p>
+                        <a href="http://code.emile.space/manager-container">Read the code</a>
+                    </div>
+                    <img class="img-fluid rounded" src="images/view_sample_200x250.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="blog-footer">
+        <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+        <p>
+            <a href="#">Back to top</a>
+        </p>
+    </footer>
+
+    </body>
+
+</html>
+
+

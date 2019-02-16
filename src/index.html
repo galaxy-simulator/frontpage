@@ -49,6 +49,7 @@
       </div>
     </nav>
 
+
     <!-- Page Content -->
     <div class="container">
 
@@ -67,166 +68,141 @@
       </div>
       <!-- /.row -->
 
-      <!-- Call to Action Well
-      <div class="card text-white bg-secondary my-4 text-center">
-        <div class="card-body">
-          <p class="text-white m-0">This is (currently) a private project with limited resources, but if you are interested in diving deeper into the subject, feel free to contact me using one of the methods listed on the contact page!</p>
-        </div>
-      </div> -->
+      <hr>
 
-      <!-- content row -->
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h2 class="card-title">What is this all?</h2>
-              <p class="card-text">How did this all begin? How are the star clusters simulated? How is the simulation so fast? Where can I learn more about this? Who are Julio Navarro, Carlos Frenk, Simon White, Josh Barnes and  Piet Hut?</p>
-            </div>
-            <div class="card-footer">
-              <a href="about.html" class="btn btn-primary">More info</a>
-            </div>
-          </div>
-        </div>
-        <!-- /.col-md-4 -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h2 class="card-title">Writeup</h2>
-              <p class="card-text">I wrote a writeup for people who want to implement this or just want to dive deeper into the rabbit hole. It contains the process of generating the star clusters and how the simulation efficiency can be increased alot.</p>
-            </div>
-            <div class="card-footer">
-              <a href="http://writeup.emile.space/" class="btn btn-primary">Writeup</a>
-            </div>
-          </div>
-        </div>
-        <!-- /.col-md-4 -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h2 class="card-title">Code</h2>
-              <p class="card-text">The complete project is currently split up into multiple docker containers representing a micro-service each. It is currently stored in git and is always happy if new post-request are made!</p>
-            </div>
-            <div class="card-footer">
-              <a href="http://code.emile.space" class="btn btn-primary">Code</a>
-            </div>
-          </div>
-        </div>
-        <!-- /.col-md-4 -->
-      </div>
-      <!-- /.row -->
+      <div class="card-columns">
 
-      <!-- content row -->
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h2 class="card-title">Generating</h2>
-              <p class="card-text">The Generator container generates stars using NFW containers. This makes it incredibly fast, because it is not bound to a machine, but can operate on a giant cluster.</p>
-            </div>
-            <div class="card-footer">
-              <a href="about.html#generating" class="btn btn-primary">More information</a>
-              <a href="http://generator.nbg1.emile.space" class="btn btn-primary">Generator module</a>
-            </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">What is this all?</h5>
+            <p class="card-text">How did this all begin? How are the star clusters simulated? How is the simulation so fast? Where can I learn more about this? Who are Julio Navarro, Carlos Frenk, Simon White, Josh Barnes and  Piet Hut?</p>
+          </div>
+          <div class="card-footer">
+            <a href="about.html" class="btn btn-primary">More info</a>
           </div>
         </div>
-        <!-- /.col-md-4 -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h2 class="card-title">Database</h2>
-              <p class="card-text">The current "Database" is a go array containing the galaxy stored in the form of a tree. This is not optimal, but it works and I'm working on a more scalable solution.</p>
-            </div>
-            <div class="card-footer">
-              <a href="http://db.nbg1.emile.space" class="btn btn-primary">Database</a>
-              <a href="http://db.nbg1.emile.space/metrics" class="btn btn-primary">Metrics</a>
-            </div>
-          </div>
-        </div>
-        <!-- /.col-md-4 -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h2 class="card-title">Manager</h2>
-              <p class="card-text">The manager manages distributing stars to the simulator containers, it also collects the metrics from the Simulator containers and functions as a target for prometheus.</p>
-            </div>
-            <div class="card-footer">
-              <a href="http://manager.nbg1.emile.space" class="btn btn-primary">Manager</a>
-              <a href="http://manager.nbg1.emile.space/metrics" class="btn btn-primary">Metrics</a>
-            </div>
-          </div>
-        </div>
-        <!-- /.col-md-4 -->
-      </div>
-      <!-- /.row -->
 
-      <!-- content row -->
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h2 class="card-title">Simulator</h2>
-              <p class="card-text">The simulator container get's stars from the manager and calculates the forces acting on it. It then inserts the new star into the database.</p>
-            </div>
-            <div class="card-footer">
-              <a href="http://simulator.nbg1.emile.space" class="btn btn-primary">Simulator</a>
-            </div>
-          </div>
+        <div class="card p-3">
+          <blockquote class="blockquote mb-0 card-body">
+            <p>A galaxy is a gravitationally bound system of stars, stellar remnants, interstellar gas, dust, and dark matter.</p>
+            <footer class="blockquote-footer">
+              <small class="text-muted">
+                <cite title="Source Title">Wikipedia</cite>
+              </small>
+            </footer>
+          </blockquote>
         </div>
-        <!-- /.col-md-4 -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h2 class="card-title">Traefik</h2>
-              <p class="card-text"><a href="https://traefik.io/">Traefik</a> ist used as a reverse proxy for some services such as the generator container. It also allows a lot of other services to work.</p>
-            </div>
-            <div class="card-footer">
-              <a href="http://traefik.nbg1.emile.space" class="btn btn-primary">Traefik</a>
-            </div>
-          </div>
-        </div>
-        <!-- /.col-md-4 -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h2 class="card-title">Monitoring</h2>
-              <p class="card-text">Monitoring is done by combining the power of <a href="https://prometheus.io">Prometheus</a> and <a href="https://grafana.com/">Grafana</a> using the other containers as targets to pull metrics from.</p>
-            </div>
-            <div class="card-footer">
-              <a href="http://manager.nbg1.emile.space" class="btn btn-primary">Manager</a>
-              <a href="http://prometheus.nbg1.emile.space" class="btn btn-primary">Prometheus</a>
-              <a href="http://grafana.nbg1.emile.space" class="btn btn-primary">Grafana</a>
-            </div>
-          </div>
-        </div>
-        <!-- /.col-md-4 -->
-      </div>
-      <!-- /.row -->
 
-      <!-- content row -->
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h2 class="card-title">Viewer</h2>
-              <p class="card-text">Viewing the galaxies that were generated in the form of scalable vector graphics</p>
-            </div>
-            <div class="card-footer">
-              <a href="http://viewer.nbg1.emile.space/drawtree/0" class="btn btn-primary">viewer</a>
-            </div>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Writeup</h5>
+            <p class="card-text">I wrote a writeup for people who want to implement this or just want to dive deeper into the rabbit hole. It contains the process of generating the star clusters and how the simulation efficiency can be increased alot.</p>
+          </div>
+          <div class="card-footer">
+            <a href="http://writeup.emile.space/" class="btn btn-primary">Writeup</a>
           </div>
         </div>
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <a class="twitter-timeline" href="https://twitter.com/GalaxySimulator?ref_src=twsrc%5Etfw">Tweets by GalaxySimulator</a>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Code</h5>
+            <p class="card-text">The complete project is currently split up into multiple docker containers representing a micro-service each. It is currently stored in git and is always happy if new post-request are made!</p>
+          </div>
+          <div class="card-footer">
+            <a href="http://code.emile.space" class="btn btn-primary">Code</a>
           </div>
         </div>
-        <!-- /.col-md-4 -->
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Generating</h5>
+            <p class="card-text">The Generator container generates stars using NFW containers. This makes it incredibly fast, because it is not bound to a machine, but can operate on a giant cluster.</p>
+          </div>
+          <div class="card-footer">
+            <a href="about.html#generating" class="btn btn-primary">More information</a>
+            <a href="http://generator.nbg1.emile.space" class="btn btn-primary">Generator module</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Database</h5>
+            <p class="card-text">The current "Database" is a go array containing the galaxy stored in the form of a tree. This is not optimal, but it works and I'm working on a more scalable solution.</p>
+          </div>
+          <div class="card-footer">
+            <a href="http://db.nbg1.emile.space" class="btn btn-primary">Database</a>
+            <a href="http://db.nbg1.emile.space/metrics" class="btn btn-primary">Metrics</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Manager</h5>
+            <p class="card-text">The manager manages distributing stars to the simulator containers, it also collects the metrics from the Simulator containers and functions as a target for prometheus.</p>
+          </div>
+          <div class="card-footer">
+            <a href="http://manager.nbg1.emile.space" class="btn btn-primary">Manager</a>
+            <a href="http://manager.nbg1.emile.space/metrics" class="btn btn-primary">Metrics</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Simulator</h5>
+            <p class="card-text">The simulator container get's stars from the manager and calculates the forces acting on it. It then inserts the new star into the database.</p>
+          </div>
+          <div class="card-footer">
+            <a href="http://simulator.nbg1.emile.space" class="btn btn-primary">Simulator</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Traefik</h5>
+            <p class="card-text"><a href="https://traefik.io/">Traefik</a> ist used as a reverse proxy for some services such as the generator container. It also allows a lot of other services to work.</p>
+          </div>
+          <div class="card-footer">
+            <a href="http://traefik.nbg1.emile.space" class="btn btn-primary">Traefik</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Monitoring</h5>
+            <p class="card-text">Monitoring is done by combining the power of <a href="https://prometheus.io">Prometheus</a> and <a href="https://grafana.com/">Grafana</a> using the other containers as targets to pull metrics from.</p>
+          </div>
+          <div class="card-footer">
+            <a href="http://manager.nbg1.emile.space" class="btn btn-primary">Manager</a>
+            <a href="http://prometheus.nbg1.emile.space" class="btn btn-primary">Prometheus</a>
+            <a href="http://grafana.nbg1.emile.space" class="btn btn-primary">Grafana</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Viewer</h5>
+            <p class="card-text">Viewing the galaxies that were generated in the form of scalable vector graphics</p>
+          </div>
+          <div class="card-footer">
+            <a href="http://viewer.nbg1.emile.space/drawtree/0" class="btn btn-primary">viewer</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Social Media</h5>
+            <p class="card-text">
+              <a class="twitter-timeline" data-width="400" data-height="600" data-theme="light" href="https://twitter.com/GalaxySimulator?ref_src=twsrc%5Etfw">Tweets by GalaxySimulator</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+             </p>
+          </div>
+          <div class="card-footer">
+            <a href="http://viewer.nbg1.emile.space/drawtree/0" class="btn btn-primary">viewer</a>
+          </div>
+        </div>
+
       </div>
-      <!-- /.row -->
 
     </div>
-    <!-- /.container -->
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>

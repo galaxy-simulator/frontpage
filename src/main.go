@@ -3,5 +3,5 @@ package main
 import "net/http"
 
 func main() {
-	panic(http.ListenAndServe(":80", http.FileServer(http.Dir("./"))))
+	panic(http.ListenAndServe(":8081", http.FileServer(http.Dir("./"))))
 }
